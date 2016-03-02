@@ -23,6 +23,9 @@
         </ul>
         <?php endif; ?>
 
+		
+		
+		
         <!-- part 2: the tasks -->
         <h2>Tasks:</h2>
         <?php if (count($task_list) == 0) : ?>
@@ -36,6 +39,9 @@
         <?php endif; ?>
         <br>
 
+		
+		
+		
         <!-- part 3: the add form -->
         <h2>Add Task:</h2>
         <form action="." method="post" >
@@ -49,6 +55,9 @@
         </form>
         <br>
 
+		
+		
+		
         <!-- part 4: the modify/promote/delete form -->
         <?php if (count($task_list) > 0 && empty($task_to_modify)) : ?>
         <h2>Select Task:</h2>
@@ -69,13 +78,18 @@
             <input type="submit" name="action" value="Modify Task">
             <input type="submit" name="action" value="Promote Task">
             <input type="submit" name="action" value="Delete Task">
+		
 
             <br>
             <label>&nbsp;</label>
             <input type="submit" name="action" value="Sort Tasks">
+            <input type="submit" name="action" value="Delete All">				
         </form>
         <?php endif; ?>
 
+		
+		
+		
         <!-- part 5: the modify save/cancel form -->
         <?php if (!empty($task_to_modify)) : ?>
         <h2>Task to Modify:</h2>
