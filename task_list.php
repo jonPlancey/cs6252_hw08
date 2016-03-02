@@ -10,7 +10,7 @@
     </header>
 
     <main>
-        <p><?php print_r($task_list); ?> </p>?>
+        <p><?php print_r($task_list); ?> </p>
         
         
         <!-- part 1: the errors -->
